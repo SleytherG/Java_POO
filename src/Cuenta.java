@@ -5,11 +5,11 @@ public class Cuenta {
  String titular;
  
  double depositar( double valor ) {
- this.saldo += valor;
+ this.saldo = this.saldo + valor;
  return this.saldo;
  }
  double retirar(double valor ) {
-  this.saldo -= valor;
+  this.saldo = this.saldo - valor;
   return this.saldo;
  }
 }

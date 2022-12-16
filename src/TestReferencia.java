@@ -13,7 +13,7 @@ public class TestReferencia {
   System.out.println(primeraCuenta.saldo);
   System.out.println(segundaCuenta.saldo);
  
-  if ( primeraCuenta == segundaCuenta ) {
+  if ( primeraCuenta.saldo == segundaCuenta.saldo ) {
    System.out.println("Son el mismo objeto");
   } else {
    System.out.println("Son diferentes");

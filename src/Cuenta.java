@@ -4,12 +4,11 @@ public class Cuenta {
  int numero;
  String titular;
  
- double depositar( double valor ) {
- this.saldo = this.saldo + valor;
- return this.saldo;
+ public void depositar(double valor) {
+  this.saldo = this.saldo + valor;
  }
- double retirar(double valor ) {
+ 
+ public void retirar(double valor) {
   this.saldo = this.saldo - valor;
-  return this.saldo;
  }
 }

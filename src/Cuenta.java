@@ -8,12 +8,21 @@ public class Cuenta {
   this.saldo = this.saldo + valor;
  }
  
- public void retirar(double valor) {
-  this.saldo = this.saldo - valor;
+ public boolean retirar(double valor) {
+  if (this.saldo >= valor) {
+   this.saldo = this.saldo - valor;
+   return true;
+  } else {
+   return false;
+  }
  }
  
- public void transferir(double valor, Cuenta cuentaDestino) {
-  this.saldo = this.saldo - valor;
-  cuentaDestino.saldo = cuentaDestino.saldo + valor;
+ public boolean transferir(double valor, Cuenta cuentaDestino) {
+  if (this.saldo >= valor) {
+   this.saldo = this.saldo - valor;
+   cuentaDestino.saldo = cuentaDestino.saldo + valor;
+   return true;
+  }
+  return false;
  }
 }

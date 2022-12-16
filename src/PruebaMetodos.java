@@ -16,5 +16,10 @@ public class PruebaMetodos {
   miCuenta.transferir(50, cuenta2);
   System.out.println(cuenta2.saldo);
   System.out.println(miCuenta.saldo);
+  
+  cuenta2.transferir(30, miCuenta);
+ 
+  System.out.println(cuenta2.saldo);
+  System.out.println(miCuenta.saldo);
  }
 }

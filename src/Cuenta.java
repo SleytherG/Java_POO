@@ -27,7 +27,7 @@ public class Cuenta {
  }
  
  public double getSaldo() {
-  return saldo;
+  return this.saldo;
  }
  
  public void setSaldo(double saldo) {
@@ -35,18 +35,26 @@ public class Cuenta {
  }
  
  public int getAgencia() {
-  return agencia;
+  return this.agencia;
  }
  
  public void setAgencia(int agencia) {
-  this.agencia = agencia;
+  if ( agencia > 0) {
+   this.agencia = agencia;
+  } else {
+   System.out.println("No estan permitidos valores negativos");
+  }
  }
  
  public int getNumero() {
-  return numero;
+  return this.numero;
  }
  
  public void setNumero(int numero) {
-  this.numero = numero;
+  if ( numero > 0) {
+   this.numero = numero;
+  } else {
+   System.out.println("No estan permitidos valores negativos");
+  }
  }
 }

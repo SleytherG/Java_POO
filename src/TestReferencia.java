@@ -1,19 +1,19 @@
 public class TestReferencia {
  public static void main(String[] args) {
   Cuenta primeraCuenta = new Cuenta();
-  primeraCuenta.saldo = 400;
+  primeraCuenta.setSaldo(400);
   
   Cuenta segundaCuenta = new Cuenta();
-  segundaCuenta.saldo = 400;
-  System.out.println(primeraCuenta.saldo);
-  System.out.println(segundaCuenta.saldo);
+  segundaCuenta.setSaldo(400);
+  System.out.println(primeraCuenta.getSaldo());
+  System.out.println(segundaCuenta.getSaldo());
   
-  segundaCuenta.saldo += 400;
+  segundaCuenta.setSaldo(segundaCuenta.getSaldo() + 400);
  
-  System.out.println(primeraCuenta.saldo);
-  System.out.println(segundaCuenta.saldo);
+  System.out.println(primeraCuenta.getSaldo());
+  System.out.println(segundaCuenta.getSaldo());
  
-  if ( primeraCuenta.saldo == segundaCuenta.saldo ) {
+  if ( primeraCuenta.getSaldo() == segundaCuenta.getSaldo() ) {
    System.out.println("Son el mismo objeto");
   } else {
    System.out.println("Son diferentes");

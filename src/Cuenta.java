@@ -82,4 +82,12 @@ public class Cuenta {
  public void setTitular(Cliente titular) {
   this.titular = titular;
  }
+ 
+ public static int getTotal() {
+  return total;
+ }
+ 
+ public static void setTotal(int total) {
+  Cuenta.total = total;
+ }
 }

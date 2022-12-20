@@ -4,5 +4,6 @@ public class PruebaConstructor {
   Cuenta cuenta2 = new Cuenta(333);
   Cuenta cuenta3 = new Cuenta(444);
   System.out.println(cuenta.getAgencia());
+  System.out.println(Cuenta.getTotal());
  }
 }
